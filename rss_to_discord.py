@@ -111,11 +111,14 @@ def entry_id(entry):
     return hashlib.sha256(base.encode("utf-8")).hexdigest()
 
 
+posted = set()
 if os.path.exists(POSTED_FILE):
-    with open(POSTED_FILE, "r") as f:
-        posted = set(json.load(f))
-else:
-    posted = set()
+    try:
+        with open(POSTED_FILE, "r", encoding="utf-8") as f:
+            posted = set(json.load(f))
+    except Exception:
+        posted = set()
+
 
 new_posts = []
 
