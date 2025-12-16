@@ -84,7 +84,7 @@ EXCLUDE_KEYWORDS = [
     "giveaway", "free skins",
     "sale", "discount",
     "top 10", "best of",
-    "opinion", "editorial","ban",esport"
+    "opinion", "editorial","ban","esport",
 ]
 
 POSTED_FILE = "posted.json"
