@@ -75,17 +75,17 @@ RSS_FEEDS = [
 
 ]
 
-INCLUDE_KEYWORDS = [
+INCLUDE_KEYWORDS = [k.lower() for k in [
   "Twitch","Youtube","Kik",
-]
+]]
 
-EXCLUDE_KEYWORDS = [
+EXCLUDE_KEYWORDS = [k.lower() for k in [
     "rumor", "leak", "unconfirmed",
     "giveaway", "free skins",
     "sale", "discount",
     "top 10", "best of",
     "opinion", "editorial","ban","esport",
-]
+]]
 
 POSTED_FILE = "posted.json"
 
